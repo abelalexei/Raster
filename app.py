@@ -13,7 +13,7 @@ from werkzeug.utils import secure_filename
 import uuid
 from datetime import datetime
 
-app = Flask(__raster__)
+app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'una_clave_secreta_predeterminada_muy_insegura') # ¡Cambia esto en producción!
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['MAX_CONTENT_LENGTH'] = 32 * 1024 * 1024  # Aumentado para permitir múltiples archivos
