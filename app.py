@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory, session
-import rasterio
+##import rasterio
 from rasterio.plot import show
 import os
 import matplotlib
